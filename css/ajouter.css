@@ -3,33 +3,93 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #14213d;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
 h1{
   color: #e5e5e5;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 form {
+  display: block;
   padding: 30px;
   background-color: white;
   border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 form div label{
-    color: fca311;
+    color: #fca311;
 }
 
 form button{
    margin-top: 10px;
-   background-color: #14213d;
+   background-color: #1f335f;
    color: white;
    font-size: 15px;
    border: none;
    padding: 10px 20px;
    border-radius: 5px;
+}
+ 
+#wrap {
+  width: 100px;
+  height: 50px;
+  z-index: 99;
+  position: relative;
+}
+.navbar {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.navbar li {
+  height: auto;
+  width: 135.8px;
+  float: left;
+  text-align: center;
+  list-style: none;
+  font: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #444444;
+}
+.navbar a {
+  padding: 18px 0;
+  text-decoration: none;
+  color: #fca311;
+  display: block;
+}
+.navbar li:hover,
+a:hover {
+  background-color: #444444;
+}
+.navbar li ul {
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.navbar li:hover ul {
+  display: block;
+}
+.navbar li ul li {
+  background-color: #444444;
+}
+.navbar li ul li a {
+  border-left: 1px solid #444444;
+  border-right: 1px solid #444444;
+  border-top: 1px solid #c9d4d8;
+}
+.navbar li ul li a:hover {
+  background-color: #a3a1a1;
 }

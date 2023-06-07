@@ -7,8 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <?php 
-  // include "./inc/init.php";
-  include "./inc/init2.php";
+  include "./inc/init.php";
   
   $pdo = Database::connect();
   $sql1 = 'SELECT * FROM 1G';
@@ -82,15 +81,15 @@
 </ul>
     <div class="tab-content">
 
-      <div class="tab-pane fade active show" id="shinydex-1G" role="tabpanel" aria-labelledby="1G-tab">
+      <div class="tab-pane fade" id="shinydex-1G" role="tabpanel" aria-labelledby="1G-tab">
         <div class="row row-pokemon m-0">
           <?php while ($row = $stmt1->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/1G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                <?php echo '<img src="icones/1G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -103,10 +102,10 @@
           <?php while ($row = $stmt2->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/2G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                  <?php echo '<img src="icones/2G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -119,10 +118,10 @@
           <?php while ($row = $stmt3->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/3G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                  <?php echo '<img src="icones/3G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -135,10 +134,10 @@
           <?php while ($row = $stmt4->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/4G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                  <?php echo '<img src="icones/4G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -151,10 +150,10 @@
           <?php while ($row = $stmt5->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/5G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                  <?php echo '<img src="icones/5G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -167,10 +166,10 @@
           <?php while ($row = $stmt6->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/6G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                  <?php echo '<img src="icones/6G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -183,10 +182,10 @@
           <?php while ($row = $stmt7->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/7G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                  <?php echo '<img src="icones/7G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -199,10 +198,10 @@
           <?php while ($row = $stmt8->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/8G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                  <?php echo '<img src="icones/8G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -215,10 +214,10 @@
           <?php while ($row = $stmt9->fetch()):?>
 
           <div class="p-0 col-4 col-sm-3 col-md-2 col-xxl-1 d-flex justify-content-center align-items-center">
-            <div class="pkm w-100">
+            <div class="pkm w-100" style="filter: contrast(0%)">
               <div class="dex_number">#<?php echo  $row['numdex'] ?></div>
                 <div>
-                  <?php echo '<img src="icones/9G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' " style="filter: contrast(0%)"/>';?>
+                  <?php echo '<img src="icones/9G/'.$row['nomA'].'.png" alt="'.$row['nomF'].' "/>';?>
                 </div> 
               </div>  
             </div> 
@@ -229,5 +228,6 @@
     </div>
   </div>
 </div>  
+<script src="./script/shiny.js"></script>
 </body>
 </html>
