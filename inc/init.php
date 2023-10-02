@@ -3,9 +3,9 @@
 class Database
 {
   private static $host = 'localhost';
-  private static $dbname = 'olivier';
-  private static $Username = 'olivier';
-  private static $Password = 'SSfoagny.88';
+  private static $dbname = '********';
+  private static $Username = '********';
+  private static $Password = '************';
     
   private static $pdo = null;
 
